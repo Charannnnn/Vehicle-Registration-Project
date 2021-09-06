@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+body{
+    background: rgb(255,226,35);
+    background: linear-gradient(90deg, rgba(255,226,35,1) 50%, rgba(31,23,23,1) 50%);
+    height: 100vh;
+} 
+
+.parent-admin-login{
+    height: 100vh;
+}
+.login-admin-class{
+    
+    background: rgb(70,63,52);
+    background: radial-gradient(circle, rgba(70,63,52,1) 4%, rgb(31, 23, 23) 77%);
+    border-radius: 20px;
+    color: rgba(255,226,35,1);
+    font-family: 'Poppins', sans-serif;
+    border: 3px solid rgba(255,226,35,1) ;
+
+}
+
+/* animated boxes */
+.square:nth-child(1) {
+    right:35%; 
+    top:11%;
+    width:7rem;
+    height:7rem ;
+    background-color: rgba(255,226,35,1);
+    color:rgba(255,226,35,1);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    opacity: 0.9;
+    z-index: -10; 
+    animation: box-animate 8s ease-in-out infinite;
+      
+
+}
+.square:nth-child(2) {
+    left:35.6%; 
+    top:75% ;
+    width:9.5rem;
+    height: 7rem ;
+    background-color:rgb(31, 23, 23) ;
+    color:rgb(31, 23, 23) 77%;
+    backdrop-filter: blur(10px);
+    opacity: 0.85;
+    border-radius: 5px;
+    z-index: -10;
+    animation: box-animate2 8s linear infinite alternate-reverse;
+    
+       
+
+}
+
+/* animations */
+
+@keyframes box-animate {
+    0%,100%{
+        transform: translateY(-23px);
+    }
+    
+    50%{
+        transform: translateY(12px);
+    }
+      
+}
+
+@keyframes box-animate2 {
+    0%,100%{
+        transform: translateX(-20px);
+    }
+    
+    50%{
+        transform: translateX(20px);
+    }
+      
+}
+/* ---my custom button--- */
+
+.my-custom-btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255,226,35,1);
+    background: transparent;
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.my-custom-btn:hover{
+    color:rgba(255,226,35,1) !important;
+} 
+
+.my-custom-btn span{
+    background: rgba(255,226,35,1);
+}
+
+.my-custom-btn span:nth-child(1)
+{
+    left: 0;
+    bottom: 0;
+    width: 2.4px;
+    height: 100%;  
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ;
+}
+
+.my-custom-btn span:nth-child(2)
+{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.4px;  
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ;
+}
+
+.my-custom-btn:hover span:nth-child(1){
+    /* height: 100%; */
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.my-custom-btn:hover span:nth-child(2){
+    
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.my-custom-btn span:nth-child(3)
+{
+    right: 0;
+    bottom: 0;
+    width: 2.4px;
+    height: 100%;  
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.5s ;
+}
+
+.my-custom-btn:hover span:nth-child(3){
+    
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.my-custom-btn span:nth-child(4)
+{
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 2.4px;  
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ;
+}
+
+.my-custom-btn:hover span:nth-child(4){
+    
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+
+
+
